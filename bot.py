@@ -8,8 +8,8 @@ client = commands.Bot(command_prefix = '-')
 async def on_ready():
 
   
-  await client.change_presence(status=discord.Status.online) #온라인
-  #await client.change_presence(status=discord.Status.idle) #자리비움
+  #await client.change_presence(status=discord.Status.online) #온라인
+  await client.change_presence(status=discord.Status.idle) #자리비움
   #await client.change_presence(status=discord.Status.dnd) #다른용무
   #await client.change_presence(status=discord.Status.offline) #오프라인
 

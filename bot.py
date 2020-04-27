@@ -11,7 +11,7 @@ async def on_ready():
   await client.change_presence(status=discord.Status.online)
 
   #await client.change_presence(activity=discord.Game(name="게임 하는중"))
-  await client.change_presence(activity=discord.Streaming(name="스트림 방송중", url='https://youtu.be/pEZIYGN5HIo'))
+  await client.change_presence(activity=discord.Streaming(name="스트림 방dd송중", url='https://www.youtube.com/watch?v=yL7IRngzIdk&list=RDpEZIYGN5HIo&index=2'))
   #await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="노래 듣는중"))
   #await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="영상 시청중"))
   

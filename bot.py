@@ -88,4 +88,4 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
 
 
 
-client.run(os.environ['token'])
+bot.run(os.environ['token'])

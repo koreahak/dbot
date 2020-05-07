@@ -48,7 +48,7 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
     choiceingredient = random.choice(ingredientlist)
     now = datetime.now()
     htime = now.strftime("%H")
-    realtime = 'htime' + 3
+    realtime = (htime) + 3
     await message.channel.send("지금이 " + '%s' % (realtime) + "시니까 " + choiceingredient + " 먹는게 좋을것 같아..... 그러니까 " + choicefood + "을(를) 추천할게!")
   
   if message.content == "!테스트":

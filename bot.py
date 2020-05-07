@@ -46,7 +46,7 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
     choicefood = random.choice(foodlist)
     ingredientlist = ["담백한걸","기름진걸","살찌는걸","짭조름 한걸","간단한걸"]
     choiceingredient = random.choice(ingredientlist)
-    await message.channel.send("지금은 " + choiceingredient + " 먹는게 좋을것 같아..... 그러니까 " + choicefood + "을(를) 추천할게!")
+    await message.channel.send("내 생각에는 " + choiceingredient + " 먹는게 좋을것 같아..... 그러니까 " + choicefood + "을(를) 추천할게!")
   if message.content == "!테스트":
     roles = discord.utils.find (lambda r: r.name == '역할이름', message.guild.roles)
     if roles in message.author.roles :

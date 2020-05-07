@@ -46,15 +46,30 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
     choicefood = random.choice(foodlist)
     ingredientlist = ["담백한걸","기름진걸","살찌는걸","짭조름 한걸","간단한걸"]
     choiceingredient = random.choice(ingredientlist)
-    now = datetime.now()
-    htime = now.strftime("%H")
-    realtime = htime + 3
-    await message.channel.send("지금이 " + ('%s' % (realtime)) + 3 + "시니까 " + choiceingredient + " 먹는게 좋을것 같아..... 그러니까 " + choicefood + "을(를) 추천할게!")
+    await message.channel.send("지금은 " + choiceingredient + " 먹는게 좋을것 같아..... 그러니까 " + choicefood + "을(를) 추천할게!")
   if message.content == "!테스트":
     roles = discord.utils.find (lambda r: r.name == '역할이름', message.guild.roles)
     if roles in message.author.roles :
       await message.channel.send("개인 채팅으로 답변완료했습니다.")
 
+
+
+
+
+#  if message.content == "!음식추천": # !명령어   라는 채팅을 친다면
+#    foodlist = ["피자","햄버거","치킨","짜장면","짬뽕","탕수육","샌드위치","우동","라면","돈가스","규카츠","소고기","부리또","타코","보쌈","굴라쉬","국밥","닭꼬치","양꼬치","연어","육회","족발",
+#    "회덮밥","파스타","삼겹살","쌀국수","무뼈닭발","유린기"]
+#    choicefood = random.choice(foodlist)
+#    ingredientlist = ["담백한걸","기름진걸","살찌는걸","짭조름 한걸","간단한걸"]
+#    choiceingredient = random.choice(ingredientlist)
+#    now = datetime.now()
+#    htime = now.strftime("%H")
+#    realtime = htime + 3
+#    await message.channel.send("지금이 " + ('%s' % (realtime)) + 3 + "시니까 " + choiceingredient + " 먹는게 좋을것 같아..... 그러니까 " + choicefood + "을(를) 추천할게!")
+#  if message.content == "!테스트":
+#    roles = discord.utils.find (lambda r: r.name == '역할이름', message.guild.roles)
+#    if roles in message.author.roles :
+#      await message.channel.send("개인 채팅으로 답변완료했습니다.")
 
 
 #서버 자체 있는지 확인
